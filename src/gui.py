@@ -17,7 +17,7 @@ label_files = ttk.Label(root, text="Files: ", bootstyle="inverse-warning", font=
 label_Folders = ttk.Label(root, text="Folders: ", bootstyle="inverse-warning", font=("Ariel", 16, "bold"))
 
 # To Put The Values Into The Labels
-files = ""
+files = []
 directories = []
 
 # Open File Explorer To Choose Files And Folders
@@ -27,7 +27,9 @@ def Browse(type):
         # Open File Explorers And Allow Multiple PDF Files
         item = filedialog.askopenfilenames(title="Select PDFs", filetypes=[("PDF Files", "*.pdf")])
         if item:
-            files = item
+            print(item)
+            for file in item:
+                files.append(file)
             # Change label Contents
             label_files.config(text=Display("file"))
     else:
