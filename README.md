@@ -14,4 +14,19 @@
  ### In classify.py the chosen model is run in the init function so it initializes once. If the files are moved to folder that Ai figured out you get a success message box but if a file is already in the folder Ai chooses it prints already there and nothing appears to user but if any other errors happen user gets a message box that the   specific file failed to move to the specific folder and in both cases the program continues to the other files.
 
 ## program's accuracy and needed libraries
- ### The program may not be that accurate since we are using a local Ai in all the models even accurate one the accuracy may not be as user expected sadly so user is asked to check if file is in correct folders. First run of the program may take time since it needs to download the Ai locally first time but when running it after first time it works faster. I tried to fix as many bugs as i found i think user mistakes are all taken care of. to run this program user needs to download pytorch and hugging face transformers and some libraries like shutil pymsgbox os tkinter ttkbootstrap and Ppypdf. Personally to keep testing and developing this program i used an anaconda environment. I think that's all the details i could think of so Thanks!
+ ### The program may not be that accurate since we are using a local Ai in all the models even accurate one the accuracy may not be as user expected sadly so user is asked to check if file is in correct folders. First run of the program may take time since it needs to download the Ai locally first time but when running it after first time it works faster.
+ 
+## How To Run
+ ### to run this program user needs to have the following libraries
+ - pytorch
+ - the hugging face transformers library
+ - shutil
+ - pymsgbox
+ - os
+ - tkinter
+ - ttkbootstrap
+ - pypdf
+
+### Personally to keep testing and developing this program i used an anaconda environment since i had trouble installing pytorch. To run the app user types in the terminal while he is in "Ai file organizer" folder he should enter
+`~$ src/main.py`
+   
